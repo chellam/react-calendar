@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{
+  /*padding-top: 51px;*/
+  background: #fff;
+  border-color: #99bce8;
+  color: #000;
+  font-size: 12px;
+  font-weight: normal;
+   font-family: Montserrat,sans-serif;
+   min-width: 1200px;
+   margin:0 auto;
+}
+.calendarrow {
+display: flex; /* equal height of the children */
+}
+.daycolumn {
+flex: 1; /* additionally, equal width */
+border:1px solid #ddd;
+min-height: 200px;
+margin:0 4px;
+}
+.weekdaytitle{
+  background: #ab9eee;
+  text-align: right;
+  padding-right: 12px;
+  height: 23px;
+  /*vertical-align: bottom;*/
+  display: block;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+  padding-top: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+li:nth-of-type(5n+1){background-color:#555d7b;}
+li:nth-of-type(5n+2){background-color:#9fd400;}
+li:nth-of-type(5n+3){background-color:#c97d99;}
+li:nth-of-type(5n+4){background-color:#79cae5;}
+li:nth-of-type(5n+5){background-color:#e84929;}
+li:nth-of-type(5n+6){background-color:#0055d0;}
+li:nth-of-type(5n+7){background-color:#0eccfe;}
+li:nth-of-type(5n+8){background-color:#ff9b00;}
+li:nth-of-type(5n+9){background-color:#004a33;}
+li:nth-of-type(5n+10){background-color:#555d7b;}
+li:nth-of-type(5n+11){background-color:#9fd400;}
+li:nth-of-type(5n+12){background-color:#c97d99;}
+.bdaypersons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color:#fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+.bdaypersons li{
+ display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+}
+.fourcolumn li{
+  width: 25%;
+  height: 42px;
+}
+.threecolumn li{
+      width: 33.333%;
+  height: 56px;
+}
+.twocolumn li{
+   width: 50%;
+  height: 50%;
+  
+}
+.bdaypersons.onecolumn, .bdaypersons.twocolumn{
+height: 84%;
+}
+.onecolumn li{
+height: 100%;
+width:100%;
+
+}
+ul:empty {
+display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+height: 84%;
+font-size: 45px;
+}
+ul:empty::after {
+ content: " \2639";
+ color:#999;
+}
